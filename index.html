@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2048 — Clean Rounded</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <h1 class="title">2048</h1>
+
+      <div class="badges">
+        <div class="badge" aria-live="polite" aria-label="Score">
+          <span class="badge-label">Score</span>
+          <span id="score" class="badge-value">1024</span>
+        </div>
+        <div class="badge" aria-live="polite" aria-label="Best">
+          <span class="badge-label">Best</span>
+          <span id="best" class="badge-value">4096</span>
+        </div>
+        <button id="new-game" class="btn">New Game</button>
+      </div>
+    </header>
+
+    <p class="hint">Use your arrow keys or WASD to move the tiles. When two tiles with the same number touch, they merge!</p>
+
+    <!-- Board -->
+    <section class="board" role="grid" aria-label="2048 board">
+      <!-- Background grid cells (purely decorative) -->
+      <div class="grid">
+        <!-- 16 placeholders for the 4x4 grid -->
+        <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+        <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+        <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+        <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+      </div>
+
+      <!-- Example tiles (for preview; your JS will position and update these) -->
+      <div class="tile tile-2"   style="--x:0; --y:3;" role="gridcell" aria-label="2">2</div>
+      <div class="tile tile-4"   style="--x:1; --y:3;" role="gridcell" aria-label="4">4</div>
+      <div class="tile tile-8"   style="--x:2; --y:3;" role="gridcell" aria-label="8">8</div>
+      <div class="tile tile-16"  style="--x:3; --y:3;" role="gridcell" aria-label="16">16</div>
+
+      <div class="tile tile-32"  style="--x:0; --y:2;" role="gridcell" aria-label="32">32</div>
+      <div class="tile tile-64"  style="--x:1; --y:2;" role="gridcell" aria-label="64">64</div>
+      <div class="tile tile-128" style="--x:2; --y:2;" role="gridcell" aria-label="128">128</div>
+      <div class="tile tile-256" style="--x:3; --y:2;" role="gridcell" aria-label="256">256</div>
+
+      <div class="tile tile-512"  style="--x:0; --y:1;" role="gridcell" aria-label="512">512</div>
+      <div class="tile tile-1024" style="--x:1; --y:1;" role="gridcell" aria-label="1024">1024</div>
+      <div class="tile tile-2048" style="--x:2; --y:1;" role="gridcell" aria-label="2048">2048</div>
+      <div class="tile tile-super" style="--x:3; --y:1;" role="gridcell" aria-label="4096">4096</div>
+    </section>
+
+    <footer class="footer">
+      <button class="btn btn-ghost" aria-label="How to play">?</button>
+      <span class="credit">Clean Rounded UI by you ✨</span>
+    </footer>
+  </main>
+</body>
+</html>
