@@ -1,3 +1,6 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
 body {
   background: #f0eee9;
   display: flex;
@@ -98,3 +101,4 @@ h4 {
 .tile-512 {background-color: #4b94f2;}
 .tile-1024 {background-color: #1ed4ce;}
 .tile-2048 {background-color: #1cd97a;}
+
