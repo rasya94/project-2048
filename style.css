@@ -32,7 +32,7 @@ h4 {
 }
 
 #board {
-  width: 80vw;
+  width: 50vw;
   aspect-ratio: 1/1;
   margin-left: calc(20vw - 10vw);
 
@@ -98,3 +98,4 @@ h4 {
 .tile-512 {background-color: #4b94f2;}
 .tile-1024 {background-color: #1ed4ce;}
 .tile-2048 {background-color: #1cd97a;}
+
