@@ -26,15 +26,15 @@ h4 {
   font-family: 'Roboto Mono', monospace;
   font-size: 30px;
   font-weight: 700;
-  margin: 20px auto;
-  margin-left: 11vw;
+  margin: 15px auto;
+  margin-left: 25vw;
   color: #76736c;
 }
 
 #board {
   width: 50vw;
   aspect-ratio: 1/1;
-  margin-left: calc(20vw - 10vw);
+  margin-left: calc(50vw - 25vw);
 
   display: flex;
   align-items: center;
@@ -98,4 +98,3 @@ h4 {
 .tile-512 {background-color: #4b94f2;}
 .tile-1024 {background-color: #1ed4ce;}
 .tile-2048 {background-color: #1cd97a;}
-
