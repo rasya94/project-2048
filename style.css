@@ -1,0 +1,100 @@
+body {
+  background: #f0eee9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 1000;
+  font-size: 70px;
+  color: #5c5952;
+}
+h4 {
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px auto;
+  color: #9d9991;
+}
+
+#score {
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px auto;
+  margin-left: 11vw;
+  color: #76736c;
+}
+
+#board {
+  width: 80vw;
+  aspect-ratio: 1/1;
+  margin-left: calc(20vw - 10vw);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5%;
+  box-shadow: 0px 10px 15px #dedad1;
+
+  background-color: #faf9f7;
+}
+
+#board-grid {
+  width: 94%;
+  aspect-ratio: 1/1;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+
+  border-radius: 3%;
+
+  background-color: #cac5bb;
+}
+
+.th1, .th2 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 1000;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.th1 {
+  color: #5c5952;
+}
+.th2 {
+  color: #f4f1eb;
+}
+
+.tile-0, .tile-2, .tile-4, .tile-8, .tile-16, .tile-32, .tile-64, .tile-128, .tile-256, .tile-512, .tile-1024, .tile-2048 {
+  width: 100%;
+  border-radius: 10%;
+  background-color: #ddd9d1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.15s ease-in-out;
+}
+.tile-2 {background-color: #f6f1e9;}
+.tile-4 {background-color: #f1e1c0;}
+.tile-8 {background-color: #ed965c;}
+.tile-16 {background-color: #e36542;}
+.tile-32 {background-color: #e3425d;}
+.tile-64 {background-color: #db4495;}
+.tile-128 {background-color: #bd5ac4;}
+.tile-256 {background-color: #8261ed;}
+.tile-512 {background-color: #4b94f2;}
+.tile-1024 {background-color: #1ed4ce;}
+.tile-2048 {background-color: #1cd97a;}
